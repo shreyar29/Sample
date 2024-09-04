@@ -1,0 +1,43 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    width: 150px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .form-group input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .success-message {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 10px;
+  }

@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Emptable from "./Components/EmpTable";
+import { Route, Routes } from "react-router-dom";
+import AddEmp from "./Components/AddEmp";
+import EditEmp from "./Components/EditEmp";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Emptable />}></Route>
+        <Route path="/addemp" element={<AddEmp />}></Route>
+        <Route path="/editemp" element={<EditEmp />}></Route>
+      </Routes>
     </div>
   );
 }
